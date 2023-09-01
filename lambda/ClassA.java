@@ -36,8 +36,7 @@ class Audi implements Car {
 }
 @FunctionalInterface
 //only contains one abstract method
-interface Car{ 
+interface Car{    
 	//method
 	public void drive(int speed, String model);
-	
 }
