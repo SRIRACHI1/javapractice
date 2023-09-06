@@ -1,0 +1,16 @@
+<!-- applicationContext.xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Define the Student bean -->
+    <bean id="student" class="com.springioc.demo.Student">
+        <property name="name" value="John Doe" />
+    </bean>
+
+    <!-- Define the School bean with Setter Injection -->
+    <bean id="school" class="com.springioc.demo.School">
+        <property name="student" ref="student" />
+    </bean>
+</beans>
+
