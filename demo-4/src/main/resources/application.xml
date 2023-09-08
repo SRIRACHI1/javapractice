@@ -5,12 +5,12 @@
 
     <!-- Define the Student bean -->
     <bean id="student" class="com.springioc.demo.Student">
-        <property name="name" value="John Doe" />
+        <constructor-arg value="Ramya" />
     </bean>
 
     <!-- Define the School bean with Setter Injection -->
     <bean id="school" class="com.springioc.demo.School">
-        <property name="student" ref="student" />
+        <constructor-arg ref="student" />
     </bean>
 </beans>
 
