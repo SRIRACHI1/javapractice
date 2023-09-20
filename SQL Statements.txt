@@ -1,0 +1,24 @@
+SELECT * FROM bus_tbl;
+Select booking_price,source from bus_tbl;
+SELECT booking_price, source FROM bus_tbl
+WHERE source = 'Assam' OR destination = 'Chennai'
+ORDER BY booking_price ASC, source DESC;
+Select distinct booking_price,destination from bus_tbl;
+SELECT booking_price, SUM(BUS_ID) FROM bus_tbl GROUP BY booking_price;
+SELECT booking_price, COUNT(*) FROM bus_tbl GROUP BY booking_price;
+SELECT booking_price, AVG(BUS_ID) FROM bus_tbl GROUP BY booking_price;
+
+
+
+
+
+
+
+bus_id    booking_price  booking_type    destination    source
+1		2000	"Sleeper"	"Chennai"	"Delhi"
+2		2000	"Fisrt Class"	"Chennai"	"Delhi"
+3		2000	"Fisrt Class"	"Mumbai"	"Assam"
+4		2000	"Fisrt Class"	"Chennai"	"Delhi"
+5		2000	"Fisrt Class"	"Mumbai"	"Assam"
+6		2000	"Fisrt Class"	"Chennai"	"Delhi"
+7		2000	"Fisrt Class"	"Mumbai"	"Assam"
